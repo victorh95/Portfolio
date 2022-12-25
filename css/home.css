@@ -1,0 +1,333 @@
+.home-container {
+  position: relative;
+}
+
+.home-welcome-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.home-welcome-content-container {
+  max-width: 600px;
+  padding: 0px 30px;
+}
+
+.home-welcome-greeting {
+  font-family: "Fira Code", sans-serif;
+  color: #1c1b40;
+}
+
+.home-welcome-name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: #1c1b40;
+  margin-top: 5px;
+}
+
+.home-welcome-work {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #262558;
+  margin-top: 15px;
+}
+
+.home-welcome-description {
+  font-family: "Open Sans", sans-serif;
+  color: #1c1b40;
+  margin-top: 15px;
+}
+
+.home-button {
+  width: 230px;
+  margin-top: 15px;
+}
+
+.home-scroll-button {
+  position: fixed;
+  bottom: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  border: 2px solid #1c1b40;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+@media screen and (max-width: 900px) {
+  .home-scroll-button {
+    display: none;
+  }
+}
+
+.home-blue-part-right {
+  position: relative;
+  z-index: 0;
+}
+.home-blue-part-right:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+  background: linear-gradient(
+    to right,
+    #1c1b40,
+    #21204c 40%,
+    #262558 60%,
+    #2c2a64 80%,
+    #312f70 90%
+  );
+  clip-path: polygon(0 0, 100% 10vw, 100% calc(100% - 10vw), 0 100%);
+}
+
+.home-blue-part-left {
+  position: relative;
+  z-index: 0;
+}
+.home-blue-part-left:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+  background: linear-gradient(to left, #1c1b40, #21204c 40%, #262558 60%, #2c2a64 80%, #312f70 90%);
+  clip-path: polygon(0 10vw, 100% 0, 100% 100%, 0 calc(100% - 10vw));
+}
+
+.home-part-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 60px;
+  background-color: #6f4bf1;
+  border-radius: 8px;
+}
+
+.home-part-title-number {
+  font-family: "Fira Code", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.home-part-title-txt {
+  margin-left: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .home-part-title {
+    width: 250px;
+    margin: 0 !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%);
+  }
+}
+
+.home-about-content-container {
+  display: flex;
+  justify-content: center;
+}
+
+.home-about-txt-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 550px;
+  padding: 0px 30px;
+}
+
+.home-about-txt {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.home-about-picture-container {
+  display: flex;
+  justify-content: end;
+  align-self: center;
+  width: 300px;
+}
+
+.home-about-picture {
+  width: 230px;
+  height: 230px;
+  border-radius: 115px;
+}
+
+@media screen and (max-width: 900px) {
+  .home-about-content-container {
+    flex-direction: column;
+  }
+
+  .home-about-txt-container {
+    margin-bottom: 30px;
+  }
+
+  .home-about-picture-container {
+    justify-content: center;
+  }
+}
+
+.home-experiences-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 150px;
+  font-family: "Open Sans", sans-serif;
+  color: #1c1b40;
+}
+
+.home-experiences-left-cell {
+  vertical-align: top;
+  width: 200px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.home-experiences-right-cell {
+  vertical-align: top;
+  text-align: end;
+  width: 200px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.home-experiences-center-top-cell {
+  vertical-align: top;
+  width: 500px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.home-experiences-center-bottom-cell {
+  vertical-align: top;
+  width: 500px;
+  padding-bottom: 40px;
+}
+
+.home-experiences-table tr:last-child td {
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .home-experiences-table {
+    padding: 0px 30px;
+  }
+}
+
+.home-projects-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  color: #1c1b40;
+}
+
+.home-projects-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  height: 400px;
+  border-radius: 25px;
+  margin: 15px;
+  padding: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.home-projects-card-logo {
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.home-projects-card-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+
+.home-projects-card-text {
+  flex: 1 1 0%;
+  max-width: 225px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.home-projects-card-tags {
+  justify-content: end;
+  text-align: center;
+  font-family: "Fira Code", sans-serif;
+  color: #262558;
+}
+
+@media screen and (max-width: 900px) {
+  .home-projects-card {
+    width: 240px;
+  }
+}
+
+.home-contacts-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-contacts-picture-container {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+
+.home-contacts-picture {
+  width: 200px;
+  height: 200px;
+}
+
+.home-contacts-txt-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-contacts-txt {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.home-contacts-link {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: #1c1b40;
+  margin-left: 15px;
+}
+.home-contacts-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .home-contacts-content-container {
+    flex-direction: column;
+  }
+
+  .home-contacts-picture-container {
+    margin-bottom: 30px;
+  }
+}

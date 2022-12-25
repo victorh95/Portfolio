@@ -1,0 +1,59 @@
+<head>
+  <link rel="stylesheet" href="../css/navbar.css" type="text/css" />
+</head>
+<body>
+  <div>
+    <nav class="navbar-container">
+      <div class="navbar-content-container v-align-percent">
+        <div class="navbar-content fd-row">
+          <img src="../assets/logo.png" alt="Logo" class="navbar-logo" />
+          <span>Victor HUGER</span>
+        </div>
+        <div class="navbar-content">
+          <a href="/#a-propos" class="navbar-hidden-small navbar-link h-margin-10">01. À propos</a>
+          <a href="/#experiences" class="navbar-hidden-small navbar-link h-margin-10">
+            02. Expériences
+          </a>
+          <a href="/#projets" class="navbar-hidden-small navbar-link h-margin-10">03. Projets</a>
+          <a href="/#contacts" class="navbar-hidden-small navbar-link h-margin-10">04. Contacts</a>
+          <a href="../assets/CV.pdf" download>
+            <button class="navbar-hidden-small navbar-button blue-button">CV</button>
+          </a>
+          <button
+            class="navbar-hidden-large navbar-menu-button-container"
+            id="navbar-menu-button-container"
+            onclick="toggleMenu()"
+          >
+            <span class="navbar-menu-button-bar"></span>
+            <span class="navbar-menu-button-bar"></span>
+            <span class="navbar-menu-button-bar"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="navbar-menu-container" id="navbar-menu-container">
+      <div class="navbar-menu-content-container" id="navbar-menu-content-container">
+        <a href="/#a-propos" class="navbar-link h-margin-10">01. À propos</a>
+        <a href="/#experiences" class="navbar-link h-margin-10"> 02. Expériences </a>
+        <a href="/#projets" class="navbar-link h-margin-10">03. Projets</a>
+        <a href="/#contacts" class="navbar-link h-margin-10">04. Contacts</a>
+        <a href="../assets/CV.pdf" download>
+          <button class="navbar-menu-button blue-button">Télécharger mon CV</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      $("#navbar-menu-button-container").toggleClass("active");
+      if ($("#navbar-menu-container").css("height") === "0px") {
+        $("#navbar-menu-container").css("height", "200px");
+        $("#navbar-menu-content-container").css("display", "flex");
+      } else {
+        $("#navbar-menu-container").css("height", "0px");
+        $("#navbar-menu-content-container").css("display", "none");
+      }
+    }
+  </script>
+</body>

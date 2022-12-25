@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Victor HUGER</title>
+
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="./css/global.css" type="text/css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="content"></div>
+
+    <script>
+      $(document).ready(function () {
+        $("#content").load("./html/home.html");
+      });
+    </script>
+  </body>
+</html>

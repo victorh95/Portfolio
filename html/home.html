@@ -1,0 +1,238 @@
+<head>
+  <link rel="stylesheet" href="../css/home.css" type="text/css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <div class="home-container">
+    <div class="home-welcome-container">
+      <div class="home-welcome-content-container hv-align-percent fd-col">
+        <span class="home-welcome-greeting">Bonjour, je m'appelle</span>
+        <span class="home-welcome-name">Victor HUGER</span>
+        <span class="home-welcome-work">Je fais du développement web et mobile.</span>
+        <p class="home-welcome-description">
+          Je suis dans ma dernière année d’apprentissage chez LiveTonight dans le cadre de ma
+          formation en tant qu'ingénieur dans la filière Informatique et Applications de l'école
+          ESIEE Paris. Au sein de la startup LiveTonight je suis apprenti développeur full stack.
+        </p>
+        <a href="../assets/CV.pdf" download>
+          <button class="home-button blue-button">Télécharger mon CV</button>
+        </a>
+      </div>
+    </div>
+
+    <a href="https://github.com/victorh95">
+      <button
+        class="home-scroll-button hv-align-flex"
+        style="left: 20px"
+        id="home-scroll-button-github"
+      >
+        <img src="../assets/github_blue.svg" alt="Redirection GitHub" />
+      </button>
+    </a>
+    <button
+      class="home-scroll-button hv-align-flex"
+      style="right: 20px"
+      onclick="scrollToTop()"
+      id="home-scroll-button-arrow"
+    >
+      <img src="../assets/arrow.svg" alt="Flèche pour retourner en haut de la page" />
+    </button>
+
+    <div class="home-blue-part-right">
+      <div class="anchor" id="a-propos"></div>
+      <div class="home-part-title" style="margin-left: 12%">
+        <span class="home-part-title-number">01.</span>
+        <span class="home-part-title-txt">À propos</span>
+      </div>
+
+      <div class="home-about-content-container v-padding-125">
+        <div class="home-about-txt-container">
+          <p class="home-about-txt">
+            C’est en 2018 que j’ai découvert la programmation. J’ai pu acquérir des compétences à
+            travers divers projets qu’ils soient d’ordre scolaire ou personnel. Cela m'a permis
+            d’être embauché par la startup LiveTonight en tant qu’apprenti. Aujourd’hui, mon domaine
+            de prédilection est le développement web et mobile.
+          </p>
+          <p class="home-about-txt">
+            Le réseau est également un domaine qui m’intéresse depuis plusieurs années. Je possède
+            des serveurs dont certains sont dédiés à la gestion de mon LAN. De manière plus
+            générale, ces derniers me permettent de tester et découvrir de nouvelles choses.
+          </p>
+        </div>
+        <div class="home-about-picture-container">
+          <img
+            src="../assets/profile_picture.jpg"
+            alt="Photo de profil"
+            class="home-about-picture"
+          />
+        </div>
+      </div>
+
+      <div class="anchor" id="experiences"></div>
+      <div class="home-part-title" style="margin-left: 12%">
+        <span class="home-part-title-number">02.</span>
+        <span class="home-part-title-txt">Expériences</span>
+      </div>
+    </div>
+
+    <table class="home-experiences-table v-padding-125" id="experiences-part-table"></table>
+
+    <div class="home-blue-part-left">
+      <div class="anchor" id="projets"></div>
+      <div class="home-part-title" style="margin-left: calc(82% - 300px)">
+        <span class="home-part-title-number">03.</span>
+        <span class="home-part-title-txt">Projets</span>
+      </div>
+
+      <div class="hv-align-flex v-padding-125">
+        <div class="home-projects-content-container" id="projects-part-cards"></div>
+      </div>
+
+      <div class="anchor" id="contacts"></div>
+      <div class="home-part-title" style="margin-left: calc(82% - 300px)">
+        <span class="home-part-title-number">04.</span>
+        <span class="home-part-title-txt">Contacts</span>
+      </div>
+    </div>
+
+    <div class="home-contacts-content-container v-padding-125">
+      <div class="home-contacts-picture-container">
+        <img
+          src="../assets/waving_hand.png"
+          alt="Image d'une main qui salue"
+          class="home-contacts-picture"
+        />
+      </div>
+      <div class="home-contacts-txt-container">
+        <div class="home-contacts-txt">
+          <img src="../assets/mail.svg" alt="Logo mail" />
+          <a href="mailto:hugervictor@gmail.com" class="home-contacts-link">
+            <span>hugervictor@gmail.com</span>
+          </a>
+        </div>
+        <div class="home-contacts-txt">
+          <img src="../assets/phone.svg" alt="Logo téléphone" />
+          <a href="tel:0607407375" class="home-contacts-link">
+            <span class="l-margin-15">06 07 40 73 75</span>
+          </a>
+        </div>
+        <div class="home-contacts-txt">
+          <img src="../assets/linkedin.svg" alt="Logo LinkedIn" />
+          <a href="https://www.linkedin.com/in/huger-victor/" class="home-contacts-link">
+            <span class="l-margin-15">linkedin.com/in/huger-victor/</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <div class="modal" id="modal"></div>
+
+  <script>
+    $(document).ready(function () {
+      $("#navbar").load("/html/navbar.html");
+      $("#footer").load("/html/footer.html");
+
+      $.getJSON("/assets/datas.json", function (result) {
+        let experiencesPart = "";
+        $.map(result.experiencesPartDatas, function (experience) {
+          experiencesPart += `<tr>
+            <td class="home-experiences-left-cell" rowspan="2">
+              <span class="r-margin-20">${experience.period}</span>
+            </td>
+            <td class="home-experiences-center-top-cell">
+              <span>${experience.title}</span>
+            </td>
+            <td class="home-experiences-right-cell" rowspan="2">
+              <span class="l-margin-20">${experience.location}</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="home-experiences-center-bottom-cell">
+              <span>${experience.text}</span>
+            </td>
+          </tr>`;
+        });
+        $("#experiences-part-table").html(experiencesPart);
+
+        let projectsPart = "";
+        $.map(result.projectsPartDatas, function (project, idx) {
+          projectsPart += `<div class="home-projects-card" onclick="openProjectModal(${idx})">
+            <img src="../assets/folder.png" alt="Image de dossier" class="home-projects-card-logo" />
+            <div class="home-projects-card-title">${project.title}</div>
+            <div class="home-projects-card-text">
+              ${project.cardText}
+            </div>
+            <div class="home-projects-card-tags">${project.tags}</div>
+          </div>`;
+        });
+        $("#projects-part-cards").html(projectsPart);
+      });
+    });
+
+    function stopFloatingButtonsBeforeFooter() {
+      if ($(document).scrollTop() + window.innerHeight >= $("#footer").offset().top) {
+        $("#home-scroll-button-github").css("position", "absolute");
+        $("#home-scroll-button-arrow").css("position", "absolute");
+      }
+
+      if ($(document).scrollTop() + window.innerHeight < $("#footer").offset().top) {
+        $("#home-scroll-button-github").css("position", "fixed");
+        $("#home-scroll-button-arrow").css("position", "fixed");
+      }
+    }
+
+    $(document).scroll(function () {
+      stopFloatingButtonsBeforeFooter();
+    });
+
+    function scrollToTop() {
+      $("html, body").animate({ scrollTop: 0 });
+    }
+
+    function closeProjectModal() {
+      $("body").css("overflow", "auto");
+      $("#modal").css("display", "none");
+      $("#modal").off("click");
+    }
+
+    function openProjectModal(idx) {
+      $("body").css("overflow", "hidden");
+      $("#modal").css("display", "block");
+
+      $.getJSON("/assets/datas.json", function (result) {
+        let modalLink = "";
+        if (result.projectsPartDatas[idx].link) {
+          modalLink = `<a href="${result.projectsPartDatas[idx].link}" class="link">
+            ${result.projectsPartDatas[idx].linkName}
+          </a>`;
+        }
+
+        $(
+          "#modal"
+        ).html(`<div class="modal-content-container hv-align-percent" id="modal-content-container">
+          <span class="modal-close" onclick="closeProjectModal()">
+            fermer [ X ]
+          </span>
+          <div class="modal-title-container">
+            <span class="modal-title">${result.projectsPartDatas[idx].title}</span>
+          </div>
+          <div class="modal-txt-container">
+            <p class="modal-txt">${result.projectsPartDatas[idx].modalText}</p>
+            <p class="modal-txt">${modalLink}</p>
+          </div>
+          <span class="modal-period">${result.projectsPartDatas[idx].period}</span>
+        </div>`);
+      });
+
+      $("#modal").click(function (event) {
+        if (!event.target.closest("#modal-content-container")) {
+          closeProjectModal();
+        }
+      });
+    }
+  </script>
+</body>

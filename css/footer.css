@@ -1,0 +1,41 @@
+.footer-waves {
+  display: flex;
+  width: 100%;
+}
+
+.footer-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background: linear-gradient(
+    to right,
+    #1c1b40,
+    #21204c 40%,
+    #262558 60%,
+    #2c2a64 80%,
+    #312f70 90%
+  );
+}
+
+.footer-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-family: "Fira Code", sans-serif;
+  color: white;
+}
+.footer-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer-button {
+  width: 230px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
