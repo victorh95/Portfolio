@@ -189,6 +189,10 @@ body {
   color: #1c1b40;
 }
 
+.rm-underline {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 900px) {
   .v-padding-125 {
     padding-top: 50px !important;
