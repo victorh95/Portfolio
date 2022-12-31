@@ -15,13 +15,13 @@
     {
       "period": "Rentrée 2020",
       "title": "Développeur React Native",
-      "text": "Stage de deux mois dont l'objectif était de coder une application mobile",
+      "text": "Stage de deux mois dont l'objectif était de coder une application mobile.",
       "location": "Lagny-sur-Marne"
     },
     {
       "period": "2020 - 2021",
       "title": "Professeur particulier",
-      "text": "Cours de mathématiques niveau terminale",
+      "text": "Cours de mathématiques niveau terminale.",
       "location": "Champs-sur-Marne"
     }
   ],
@@ -38,7 +38,7 @@
     {
       "title": "Portfolio",
       "cardText": "Site personnel qui me présente en tant que développeur.",
-      "modalText": "L'aboutissement de ce projet est le site sur lequel vous vous trouvez actuellement. L'idée c'est d'avoir un support numérique pour me présenter et présenter mon travail, un genre de CV amélioré.\n\nJe me suis occupé de la réalisation de ce site de A à Z, des maquettes sur Figma à la mise en production en passant par le développement.\nJ'ai décidé de laisser mon code en publique sur GitHub, si vous voulez le consulter, voici le lien:",
+      "modalText": "L'aboutissement de ce projet est le site sur lequel vous vous trouvez actuellement. L'idée c'est d'avoir un support numérique pour me présenter et présenter mon travail, un genre de CV amélioré.\n\nJe me suis occupé de la réalisation de ce site de A à Z, des maquettes sur Figma à la mise en production en passant par le développement.\nJ'ai décidé de laisser mon code en publique sur GitHub, si vous voulez le consulter, voici le lien :",
       "link": "https://github.com/victorh95/Portfolio",
       "linkName": "Repo GitHub de mon portfolio",
       "tags": "HTML CSS JavaScript",
@@ -47,7 +47,7 @@
     {
       "title": "ArboRush v2",
       "cardText": "Application permettant de faciliter la gestion de son commerce en ligne.",
-      "modalText": "Ce projet fait suite à ArboRush, d'où la mention \"v2\". Ainsi, pour bien le comprendre, il est conseillé d'aller voir la première version du projet. L'objectif était de partir des bases que nous avions pour faire un ERP qui s'adapte aux besoins et au budget des professionnels qui vendent sur les plateformes d'e-commerce. En somme, nous voulions créer une version améliorée d'ArboRush et la commercialiser. Malheureusement, pour diverses raisons, le projet a été stopé.\n\nCependant, au niveau du code, de belles avancées avaient été faites. Sur cette version, je me suis occupé à la fois du back-end et du front-end. Voici une liste de fonctionnalités que j'avais réussi à mettre en place :\n- inscription -> soit on possède une entreprise, soit on souhaite en rejoindre une (pour ce faire il faut utiliser l'identifiant de cette dernière)\n- connexion\n- déconnexion\n- gestion de son profil\n- gestion du profil de l'entrepise (pour accéder à cette page il faut avoir des droits particuliers)\n- gestion des membres de l'entrepise et de leurs autorisations (de même, pour accéder à cette page il faut avoir des droits particuliers)\n- possiblité de séparer les commandes en plusieurs rushs (gestion multi-tulisateurs)\n- liste des marges par jour et par rush",
+      "modalText": "Ce projet fait suite à ArboRush, d'où la mention \"v2\". Ainsi, pour bien le comprendre, il est conseillé d'aller voir la première version du projet. L'objectif était de partir des bases que nous avions pour faire un ERP qui s'adapte aux besoins et au budget des professionnels qui vendent sur les plateformes d'e-commerce. En somme, nous voulions créer une version améliorée d'ArboRush et la commercialiser. Malheureusement, pour diverses raisons, le projet a été stopé.\n\nCependant, au niveau du code, de belles avancées avaient été faites. Sur cette version, je me suis occupé à la fois du back-end et du front-end. Voici une liste de fonctionnalités que j'avais réussi à mettre en place :\n- inscription -> soit on possède une entreprise, soit on souhaite en rejoindre une (pour ce faire il faut utiliser l'identifiant de cette dernière)\n- connexion\n- déconnexion\n- gestion de son profil\n- gestion du profil de l'entrepise (pour accéder à cette page il faut avoir des droits particuliers)\n- gestion des membres de l'entrepise et de leurs autorisations (de même, pour accéder à cette page il faut avoir des droits particuliers)\n- possiblité de séparer les commandes en plusieurs rushs (gestion multi-tulisateurs)\n- liste des marges par jour et par rush.",
       "link": "",
       "linkName": "",
       "tags": "Django PostgreSQL Bootstrap",
@@ -65,7 +65,7 @@
     {
       "title": "ArboRush v1",
       "cardText": "Interface web (front-end) pour faciliter la gestion de commandes.",
-      "modalText": "L'objectif de ce projet était de réaliser une interface web facilitant la gestion de commandes. Lentreprise qui nous a été confié cette mission vend sur différentes plateformes d'e-commerce, d'où ce besoin.\n\nNous étions plusieurs à travailler sur ce projet. Personellement, je me suis occupé de la partie front-end.\nL'application que nous avons créée permet de lancer des rushs. Cela consiste à traiter une suite de commande provenant de diverses plateformes. Les différentes étapes du traitement d'une commande sont les suivantes :\n- mettre les objets commandés dans un cols (1)\n- entrer les informations du client sur la plateforme de l'expéditeur (2)\n- imprimer l'étiquette (3)\n- entrer les informations fournies par l'expéditeur sur la platforme d'où provient la commande pour que le client puisse suivre son colis (4)\n- confier le colis à l'expéditeur (5)\nNotre application automatise les étapes 2, 3 et 4, ce qui permet à l'entreprise qui nous a confié la mission de gagner un temps précieux.\nDe plus, l'application permet de voir la marge réalisé par jour.",
+      "modalText": "L'objectif de ce projet était de réaliser une interface web facilitant la gestion de commandes. Lentreprise qui nous a été confié cette mission vend sur différentes plateformes d'e-commerce, d'où ce besoin.\n\nNous étions plusieurs à travailler sur ce projet. Personellement, je me suis occupé de la partie front-end.\nL'application que nous avons créée permet de lancer des rushs. Cela consiste à traiter une suite de commande provenant de diverses plateformes. Les différentes étapes du traitement d'une commande sont les suivantes :\n- mettre les objets commandés dans un cols (1)\n- entrer les informations du client sur la plateforme de l'expéditeur (2)\n- imprimer l'étiquette (3)\n- entrer les informations fournies par l'expéditeur sur la platforme d'où provient la commande pour que le client puisse suivre son colis (4)\n- confier le colis à l'expéditeur (5).\nNotre application automatise les étapes 2, 3 et 4, ce qui permet à l'entreprise qui nous a confié la mission de gagner un temps précieux.\nDe plus, l'application permet de voir la marge réalisé par jour.",
       "link": "",
       "linkName": "",
       "tags": "React",
