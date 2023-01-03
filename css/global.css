@@ -207,3 +207,42 @@ body {
     width: 250px;
   }
 }
+
+.animated-scroll-arrow {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  width: 70px;
+  height: 40px;
+  animation: arrow 0.5s 1s infinite alternate ease-out;
+}
+.animated-scroll-arrow:hover {
+  animation-play-state: paused;
+}
+
+.animated-scroll-arrow-left {
+  width: 35px;
+  height: 10px;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+  border-radius: 4px;
+  background-color: #1c1b40;
+}
+
+.animated-scroll-arrow-right {
+  width: 35px;
+  height: 10px;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  border-radius: 4px;
+  background-color: #1c1b40;
+}
+
+@keyframes arrow {
+  100% {
+    bottom: 50px;
+  }
+}
