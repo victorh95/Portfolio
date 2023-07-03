@@ -258,6 +258,8 @@
 }
 
 .home-projects-card-title {
+  max-width: 225px;
+  text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   font-weight: bold;

@@ -15,8 +15,8 @@
           formation en tant qu'ingénieur dans la filière Informatique et Applications de l'école
           ESIEE Paris. Au sein de la startup LiveTonight je suis apprenti développeur full stack.
         </p>
-        <a href="../assets/CV.pdf" download>
-          <button class="home-button blue-button">Télécharger mon CV</button>
+        <a href="../assets/CV.pdf">
+          <button class="home-button blue-button">Voir mon CV</button>
         </a>
       </div>
     </div>
@@ -214,11 +214,14 @@
       $("#modal").css("display", "block");
 
       $.getJSON("/assets/datas.json", function (result) {
-        let modalLink = "";
-        if (result.projectsPartDatas[idx].link) {
-          modalLink = `<a href="${result.projectsPartDatas[idx].link}" class="link">
-            ${result.projectsPartDatas[idx].linkName}
-          </a>`;
+        let modalLinks = "";
+        if (result.projectsPartDatas[idx].links.length > 0) {
+          result.projectsPartDatas[idx].links.forEach(
+            (el) =>
+              (modalLinks += `<a href="${el.link}" class="link">
+                            ${el.linkName}
+                          </a>`)
+          );
         }
 
         $(
@@ -232,7 +235,7 @@
           </div>
           <div class="modal-txt-container">
             <p class="modal-txt">${result.projectsPartDatas[idx].modalText}</p>
-            <p class="modal-txt">${modalLink}</p>
+            <p class="modal-txt">${modalLinks}</p>
           </div>
           <span class="modal-period">${result.projectsPartDatas[idx].period}</span>
         </div>`);
