@@ -11,13 +11,18 @@
         <span class="home-welcome-name">Victor HUGER</span>
         <span class="home-welcome-work">Je fais du développement web et mobile.</span>
         <p class="home-welcome-description">
-          Je suis dans ma dernière année d’apprentissage chez LiveTonight dans le cadre de ma
-          formation en tant qu'ingénieur dans la filière Informatique et Applications de l'école
-          ESIEE Paris. Au sein de la startup LiveTonight je suis apprenti développeur full stack.
+          Je suis un ingénieur en CDI chez Axelor, éditeur d'une suite d'applications métiers open
+          source, en tant que développeur front-end web et mobile. De plus, j'ai créé mon
+          auto-entreprise, MainCode, à travers laquelle je propose mes services de développeur.
         </p>
-        <a href="../assets/CV.pdf">
-          <button class="home-button blue-button">Voir mon CV</button>
-        </a>
+        <div>
+          <a href="../assets/CV.pdf" target="_blank" class="rm-underline">
+            <button class="home-button blue-button">Voir mon CV</button>
+          </a>
+          <a href="https://maincode.fr/" target="_blank" class="rm-underline">
+            <button class="home-button blue-button l-margin-20">Visiter MainCode</button>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -55,9 +60,10 @@
         <div class="home-about-txt-container">
           <p class="home-about-txt">
             C’est en 2018 que j’ai découvert la programmation. J’ai pu acquérir des compétences à
-            travers divers projets qu’ils soient d’ordre scolaire ou personnel. Cela m'a permis
-            d’être embauché par la startup LiveTonight en tant qu’apprenti. Aujourd’hui, mon domaine
-            de prédilection est le développement web et mobile.
+            travers divers projets qu’ils soient d’ordre professionnel, scolaire ou personnel. Cela
+            m'a permis d’être embauché par l'entreprise Axelor en tant que développeur front-end web
+            et mobile. J'ai également créé mon auto-entreprise, MainCode, avec laquelle je propose
+            mes services de développeur.
           </p>
           <p class="home-about-txt">
             Le réseau est également un domaine qui m’intéresse depuis plusieurs années. Je possède
@@ -218,9 +224,9 @@
         if (result.projectsPartDatas[idx].links.length > 0) {
           result.projectsPartDatas[idx].links.forEach(
             (el) =>
-              (modalLinks += `<a href="${el.link}" class="link">
-                            ${el.linkName}
-                          </a>`)
+              (modalLinks += `<a href="${el.link}" target="_blank" class="link">
+                                ${el.linkName}
+                              </a>`)
           );
         }
 

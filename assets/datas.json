@@ -1,37 +1,42 @@
 {
   "experiencesPartDatas": [
     {
+      "period": "Depuis 2023",
+      "title": "Développeur front-end web et mobile",
+      "text": "Poste obtenu chez Axelor à la fin de mes études d'ingénieur dans lequel j'utilise diverses technologies telles que React et React Native.",
+      "location": "Champs-sur-Marne"
+    },
+    {
       "period": "2021 - 2023",
-      "title": "Développeur full stack",
+      "title": "Développeur full stack web et mobile",
       "text": "Poste obtenu chez LiveTonight dans le cadre de ma formation en apprentissage, j’ai eu l’occasion d’utiliser diverses technologies telles que React, React Native ou encore Ruby on Rails.",
       "location": "Paris"
     },
     {
-      "period": "Début 2023",
-      "title": "Développeur React Native",
-      "text": "Création d'une application mobile permettant de piloter une nappe chauffante en Bluetooth pour Le matelas 365.",
-      "location": "Lagny-sur-Marne"
-    },
-    {
       "period": "Juillet 2021",
-      "title": "Développeur React",
-      "text": "Création du front-end d’une application web permettant de faciliter la gestion de commandes d’une entreprise.",
+      "title": "Développeur front-end web",
+      "text": "Création en React du front-end d’une application web permettant de faciliter la gestion de commandes d’une entreprise.",
       "location": "Croissy-Beaubourg"
     },
     {
       "period": "Rentrée 2020",
-      "title": "Développeur React Native",
-      "text": "Stage de deux mois dont l'objectif était de coder une application mobile.",
+      "title": "Développeur front-end mobile",
+      "text": "Stage de deux mois dont l'objectif était de coder une application mobile en React Native.",
       "location": "Lagny-sur-Marne"
-    },
-    {
-      "period": "2020 - 2021",
-      "title": "Professeur particulier",
-      "text": "Cours de mathématiques niveau terminale.",
-      "location": "Champs-sur-Marne"
     }
   ],
   "projectsPartDatas": [
+    {
+      "title": "MainCode",
+      "cardText": "Site vitrine de mon auto-entreprise.",
+      "modalText": "Je souhaitais avoir une présence en ligne pour mon auto-entreprise afin de mettre en avant les services que je propose. C'est donc pour répondre à ce besoin que ce projet est né.\n\nLa création de ce site web a été l'occasion pour moi de me replonger dans le no-code avec WordPress. Cela m'a permis d'avoir rapidement un résultat plus que que convenable. Je me suis également chargé de l'hébergement. Pour ce faire, j'ai utilisé mes serveurs.",
+      "links": [{
+        "link": "https://maincode.fr/",
+        "linkName": "Visiter MainCode"
+      }],
+      "tags": "WordPress",
+      "period": "Septembre 2023"
+    },
     {
       "title": "LiveTonight",
       "cardText": "Présentation d’une de mes réalisation en tant qu’apprenti.",
@@ -48,7 +53,7 @@
     {
       "title": "Le matelas 365 - Thermoclean",
       "cardText": "Application mobile permettant de piloter une nappe chauffante en Bluetooth.",
-      "modalText": "L'entreprise Le matelas 365 m'a contacté début 2023 au sujet de leur application permettant de contrôler une nappe chauffante à distance grâce au Bluetooth. Cette dernière devait être mise à jour pour rester sur les stores. J'ai décidé de repartir de zéro car certaines parties du code étaient peu lisibles et des bibliothèques qui n'étaient plus maintenues étaient utilisées. L'idée était d'obtenir une application avec des bases saines et solides pour pouvoir bien en faire le suivi.\n\nL'application permet d'exécuter plusieurs actions sur la nappe chauffante :\n- la mettre en chauffe instantanément, en choisissant un thermostat et une durée\n- la programmer, en choisissant les jours de fonctionnement de la nappe, une heure de coucher, un thermostat et une durée ; l'utilisateur reçoit une notification aux moments définis et n'a qu'à cliquer dessus pour que la nappe se mette en chauffe\n- la passer en mode assainissement ; cette fonction fait monter la température de la nappe et dure 5 heures, cela permet de détruire les acariens et les principales bactéries qui peuvent se trouver dans les matelas.\nVous trouverez ci-dessous des liens redirigeant vers les stores où l'application est disponible. Vous pouvez la télécharger, mais pour bien la tester vous aurez besoin d'une nappe chauffante de chez Le matelas 365.",
+      "modalText": "L'entreprise Le matelas 365 m'a contacté début 2023 au sujet de leur application permettant de contrôler une nappe chauffante à distance grâce au Bluetooth. Cette dernière devait être mise à jour pour rester sur les stores. J'ai décidé de repartir de zéro car certaines parties du code étaient peu lisibles et des bibliothèques qui n'étaient plus maintenues étaient utilisées. L'idée était d'obtenir une application avec des bases saines et solides pour pouvoir bien en faire le suivi.\nCette mission a été réalisée pour le compte de MainCode, mon auto-entreprise.\n\nL'application permet d'exécuter plusieurs actions sur la nappe chauffante :\n- la mettre en chauffe instantanément, en choisissant un thermostat et une durée\n- la programmer, en choisissant les jours de fonctionnement de la nappe, une heure de coucher, un thermostat et une durée ; l'utilisateur reçoit une notification aux moments définis et n'a qu'à cliquer dessus pour que la nappe se mette en chauffe\n- la passer en mode assainissement ; cette fonction fait monter la température de la nappe et dure 5 heures, cela permet de détruire les acariens et les principales bactéries qui peuvent se trouver dans les matelas.\nVous trouverez ci-dessous des liens redirigeant vers les stores où l'application est disponible. Vous pouvez la télécharger, mais pour bien la tester vous aurez besoin d'une nappe chauffante de chez Le matelas 365.",
       "links": [
         {
           "link": "https://play.google.com/store/apps/details?id=com.lematelas365.app",
@@ -88,7 +93,7 @@
       "cardText": "Site vitrine du projet ArboRush v2.",
       "modalText": "Pour la deuxième version du projet ArboRush nous avions besoin d'un site vitrine présentant ce que nous prévoyions de faire. C'est donc pour répondre à ce besoin que ce projet est né.\n\nLa création de ce site web a été l'occasion pour moi de découvrir le no-code avec WordPress. Cela m'a permis d'avoir rapidement un résultat plus que que convenable. Je me suis également chargé de l'hébergement. Pour ce faire, j'ai utilisé mes serveurs.",
       "links": [],
-      "tags": "WordPress ",
+      "tags": "WordPress",
       "period": "Juillet 2022"
     },
     {
