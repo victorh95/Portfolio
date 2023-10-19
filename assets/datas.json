@@ -107,7 +107,7 @@
     {
       "title": "hMessages",
       "cardText": "Application mobile de messagerie instantanée.",
-      "modalText": "Ce projet est un challenge que je me suis lancé pour développer mes compétences en développement mobile. L'objectif était de créer une application de messagerie instantanée. Il s'agit du premier projet que j'ai poussé jusqu'à l'étape de production.\n\nSi vous voulez tester l'application hMessages, vous pouvez la télécharger depuis Google Play. Cependant, gardez bien en tête que ce projet a plus de deux ans.",
+      "modalText": "Ce projet est un challenge que je me suis lancé pour développer mes compétences en développement mobile. L'objectif était de créer une application de messagerie instantanée. Il s'agit du premier projet que j'ai poussé jusqu'à l'étape de production.\n\nSi vous voulez voir à quoi ressemble l'application hMessages, vous pouvez vous rendre sur sa page Google Play. Si vous le souhaitez, vous pouvez la tester, mais gardez bien en tête que cette application a plus de trois ans. De plus, comme je ne maintiens pas ce projet, il est possible que tout ne fonctionne plus correctement, voire même que l'application ne soit plus disponible au téléchargement.",
       "links": [
         {
           "link": "https://play.google.com/store/apps/details?id=tech.huger.messages",
